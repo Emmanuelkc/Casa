@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FourthActivity">
+
+    <TextView
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:text="Log in to your Account"
+        android:textSize="30sp"
+        android:textColor="@color/colorRed"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="30sp"/>
+
+
+    <EditText
+        android:id="@+id/editTextemail2"
+        android:layout_width="370sp"
+        android:layout_height="40sp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:layout_gravity="center"
+        android:background="@drawable/curves"
+        android:paddingLeft="20sp"
+        android:layout_marginTop="50sp"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/editTextpassword2"
+        android:layout_width="370sp"
+        android:layout_height="40sp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="password"
+        android:layout_gravity="center"
+        android:background="@drawable/curves"
+        android:paddingLeft="20sp"
+        android:layout_marginTop="15sp"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"/>
+
+
+    <TextView
+        android:id="@+id/textviewforgottenpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/colorRed"
+        android:text="Forgotten password"
+        android:layout_marginTop="15sp"
+        android:layout_marginLeft="30sp"
+        android:clickable="true"/>
+
+
+
+    <Button
+        android:id="@+id/buttonlogin"
+        android:layout_width="370sp"
+        android:layout_height="40sp"
+        android:background="@drawable/curves"
+        android:backgroundTint="@color/colorRed"
+        android:layout_marginTop="50sp"
+        android:layout_gravity="center"
+        android:text="Login"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50sp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an Account?"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"
+            />
+
+        <TextView
+            android:id="@+id/textviewregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Register"
+            android:layout_marginLeft="0sp"
+            android:textColor="@color/colorRed"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="200sp"
+        android:layout_height="3sp"
+        android:background="@color/colorRed"
+        android:layout_gravity="center"
+        android:layout_marginTop="190sp"/>
+
+</LinearLayout>

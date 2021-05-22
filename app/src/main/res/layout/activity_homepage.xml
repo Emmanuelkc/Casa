@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Homepage">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:orientation="horizontal"
+        android:background="@drawable/curves"
+        android:backgroundTint="@color/colorRed">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="300sp"
+            android:layout_height="50sp"
+            app:title="Flexy de Casa"
+            android:layout_marginStart="10sp"
+            app:titleTextColor="@color/colorBlack"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/curves"/>
+
+        <ImageView
+            android:id="@+id/imageviewcart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/cart"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <SearchView
+                android:id="@+id/searchview"
+                android:layout_width="370sp"
+                android:layout_height="40sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15sp"
+                android:background="@drawable/curves"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:iconifiedByDefault="false"/>
+
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/Layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginTop="15sp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/linearlayoutbedroom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150sp"
+                            android:layout_height="100sp"
+                            android:background="@drawable/bedroomy" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="bedroom"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10sp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150sp"
+                            android:layout_height="100sp"
+                            android:background="@drawable/sittingroomr" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="sitting room"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10sp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150sp"
+                            android:layout_height="100sp"
+                            android:background="@drawable/dinningaa" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="dinning"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10sp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150sp"
+                            android:layout_height="100sp"
+                            android:background="@drawable/toiletaa" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="toilet/bathroom"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10sp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150sp"
+                            android:layout_height="100sp"
+                            android:background="@drawable/kitchenaa" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="kitchen"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </HorizontalScrollView>
+
+
+            <GridView
+                android:id="@+id/mygridview"
+                android:layout_width="match_parent"
+                android:layout_height="600sp"
+                android:layout_marginTop="10sp"
+                android:horizontalSpacing="10dp"
+                android:listSelector="@color/colorRed"
+                android:numColumns="2"
+                android:verticalSpacing="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/colorRed"
+                android:text="New Designs"
+                android:layout_marginTop="15sp"
+                android:layout_marginStart="20sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="15sp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="350sp"
+                    android:layout_height="300sp"
+                    android:background="@drawable/dinningaf" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20sp"
+                    android:text="Spanish design-Dinning"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3.5(5k rating) spanish dinning room"
+                    android:layout_marginStart="20sp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp"
+                    android:drawableLeft="@drawable/rate"
+                    android:drawableTint="@color/colorYellow"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="15sp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="350sp"
+                    android:layout_height="300sp"
+                    android:background="@drawable/bedroomy" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20sp"
+                    android:text="Bedroom-American great tower"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.1(40k rating) American Bedroom"
+                    android:layout_marginStart="20sp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp"
+                    android:drawableLeft="@drawable/rate"
+                    android:drawableTint="@color/colorYellow"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="15sp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="350sp"
+                    android:layout_height="300sp"
+                    android:background="@drawable/sittingroomn" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20sp"
+                    android:text="Sitting Room-Nigerian(E-Money) mansion"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6.4(129k rating) Nigerian Design"
+                    android:layout_marginStart="20sp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp"
+                    android:drawableLeft="@drawable/rate"
+                    android:drawableTint="@color/colorYellow"
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/colorRed"
+                android:text="Popular Choice"
+                android:layout_marginTop="15sp"
+                android:layout_marginStart="20sp"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="15sp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="100sp"
+                android:layout_height="50sp"
+                android:background="@drawable/sittingroomn" />
+
+            <TextView
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:text="Sitting Room-Nigerian(E-Money) mansion.                            4.1(40k rating) American Bedroom"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
